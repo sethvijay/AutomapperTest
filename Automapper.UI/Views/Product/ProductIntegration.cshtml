@@ -1,0 +1,197 @@
+﻿@model IEnumerable<Automapper.UI.Models.Product.ProductExistingModel>
+
+@{
+    ViewData["Title"] = "ProductIntegration";
+}
+
+<h1>ProductIntegration</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DCProductCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DistributionCentreId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DistributionCentreName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendlyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SupplierName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FieldOldName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FieldNewName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FieldOldUOM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FieldNewUOM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemsPerPack)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacksPerCarton)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RRUom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SCOldUom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SCOldUomCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SCNewUom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcceptedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MajorCategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinorCategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeyIngredient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParentProduct)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductCategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FieldName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Count)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DCProductCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistributionCentreId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistributionCentreName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendlyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SupplierName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldOldName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldNewName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldOldUOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldNewUOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemsPerPack)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacksPerCarton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RRUom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCOldUom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCOldUomCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCNewUom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcceptedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MajorCategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinorCategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeyIngredient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductCategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

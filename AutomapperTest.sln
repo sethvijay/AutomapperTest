@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{7DC66CBD-5826-4DE0-A9FE-FC673DC97BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automapper.UI", "Automapper.UI\Automapper.UI.csproj", "{4F724DC4-60A9-4182-9B52-E43EF255E8F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC66CBD-5826-4DE0-A9FE-FC673DC97BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC66CBD-5826-4DE0-A9FE-FC673DC97BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC66CBD-5826-4DE0-A9FE-FC673DC97BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC66CBD-5826-4DE0-A9FE-FC673DC97BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F724DC4-60A9-4182-9B52-E43EF255E8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F724DC4-60A9-4182-9B52-E43EF255E8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F724DC4-60A9-4182-9B52-E43EF255E8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F724DC4-60A9-4182-9B52-E43EF255E8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABEE37B8-F9CE-49DE-90B3-C2CEDC1A5360}
+	EndGlobalSection
+EndGlobal
